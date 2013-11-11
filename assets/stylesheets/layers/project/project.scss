@@ -1,5 +1,51 @@
 //****************************************************************************************************
 //
+// .. PAGE
+//
+//****************************************************************************************************
+.page {
+  &.__terms {
+    background-color: $base-bg;
+    .header {
+      .header_nav_i_a {
+        &:hover,
+        &.__current {
+          color: $links-color-hover;
+        }
+      }
+    }
+    .section {
+
+    }
+    .footer {
+      background-color: $flagman-bg;
+      color: #fff;
+    }
+  }
+  &.__feedback {
+    background-color: $flagman-bg;
+    .header {
+      .header_nav_i_a {
+        &:hover,
+        &.__current {
+          color: #fff;
+        }
+      }
+    }
+    .section {
+
+    }
+    .footer {
+      background-color: $base-bg;
+      color: #b4b4b4;
+    }
+  }
+}
+
+
+
+//****************************************************************************************************
+//
 // .. HEADER
 //
 //****************************************************************************************************
@@ -27,9 +73,40 @@
   font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
-  &.__current {
-    color: $links-color-hover;
-    text-decoration: none;
+  &:hover, &.__current {text-decoration: none;}
+}
+
+
+
+//****************************************************************************************************
+//
+// .. SECTION
+//
+//****************************************************************************************************
+.section {
+
+}
+
+
+//****************************************************************************************************
+//
+// .. FEEDBACK
+//
+//****************************************************************************************************
+.feedback-form {
+  margin: 0 auto;
+  width: 52rem;
+}
+.feedback-form_submit {
+  color: #fff;
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
   }
 }
 
@@ -41,8 +118,6 @@
 //
 //****************************************************************************************************
 .footer {
-  background-color: #aee123;
-  color: #fff;
   font-weight: 300;
   padding: 6.5rem 0 3rem;
 }

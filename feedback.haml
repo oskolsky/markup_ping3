@@ -1,0 +1,43 @@
+%body#page.page.__feedback
+  = haml 'views/layouts/alerts/_ie'.to_sym
+  = haml 'views/layouts/alerts/_no-js'.to_sym
+
+  %header#header.header{role: "banner"}
+    .ctn
+      .grid
+        .grid-i.__grid-3.va-m
+          %a{href: "#"}
+            %img{src: "/assets/images/logo_white.png", alt: "Ping", width: "196", height: "81", class: "header_logo"}
+        .grid-i.__grid-9.va-m
+          %nav{role: "navigation"}
+            %ul.header_nav
+              %li.header_nav_i
+                %a{href: "/terms", class: "header_nav_i_a"} Условия использования
+              %li.header_nav_i
+                %a{href: "/feedback", class: "header_nav_i_a __current"} Обратная связь
+              %li.header_nav_i
+                %a{href: "#", class: "header_nav_i_a"} Блог
+
+  %main#main.main.__feedback{role: "main"}
+
+    %section.section.p-b_3{role: "region", "aria-label" => "Feedback"}
+      .ctn
+        .feedback-form
+          %form.form
+            .form_row
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Имя", autofocus: "autofocus"}
+            .form_row
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Email"}
+            .form_row
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Причина обращения"}
+            .form_row
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Тема"}
+            .form_row
+              %textarea.form_textarea.form_el.__block{rows: 5, placeholder: "Сообщение"}
+            .form_row
+              .tx.__center
+                %a{href: "#", class: "feedback-form_submit"} Отправить
+
+  %footer#footer.footer{role: "contentinfo"}
+    .ctn
+      %p Все права защищены 2013-2014

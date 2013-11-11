@@ -58,6 +58,11 @@ $base-font-weight: 400;
 $base-line-height: 1.2;
 
 //
+// .. Flagman
+//
+$flagman-bg: #b7e045;
+
+//
 // .. Headings
 //
 $h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;;
@@ -100,15 +105,15 @@ $links-style-pseudo: uu; // .. nn / uu / un
 //
 $form-el-bg: #fff;
 $form-el-border-color: #ccc;
-$form-el-border: 1px solid $form-el-border-color;
-$form-el-border-radius: .3em;
+$form-el-border: none;
+$form-el-border-radius: 0;
 $form-el-color: #000;
 $form-el-color-required: #f00;
 $form-el-color-valid-true: #008000;
 $form-el-color-valid-false: #f00;
-$form-el-font-size: $base-font-size;
+$form-el-font-size: 2rem;
 $form-el-line-height: $base-line-height;
-$form-el-padding: .3rem .6rem;
+$form-el-padding: 1.3rem 2.5rem;
 $form-btn-padding: .3rem 1.5rem;
 
 //
