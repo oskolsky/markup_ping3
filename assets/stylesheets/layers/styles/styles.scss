@@ -11,7 +11,7 @@ body {
   font-family: $base-font-family;
   font-size:   $base-font-size;
   font-weight: $base-font-weight;
-  line-height: $base-line-height;  
+  line-height: $base-line-height;
   -webkit-backface-visibility: hidden; // .. http://goo.gl/bNpRD4
 }
 
@@ -88,7 +88,7 @@ h6, .zeta {
 //
 .va-bl {vertical-align: baseline;}
 .va-t  {vertical-align: top;}
-.va-m  {vertical-align: middle;}
+.va-m  {vertical-align: middle !important;}
 .va-b  {vertical-align: bottom;}
 
 

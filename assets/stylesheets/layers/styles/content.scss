@@ -89,7 +89,7 @@
 .cnt > ul:not(:last-child),
 .cnt > figure:not(:last-child),
 .cnt > img:not(:last-child),
-.cnt > p:not(:last-child),
+//.cnt > p:not(:last-child),
 .cnt > pre:not(:last-child),
 .cnt > table:not(:last-child) {margin-bottom: #{$content-styles-factor}rem;}
 
@@ -121,11 +121,14 @@
 .cnt > ul ul    {list-style-type: circle;}
 .cnt > ul ul ul {list-style-type: square;}
 
-.cnt > ol li,
-.cnt > ul li {margin: 0 0 #{$content-styles-factor / 2}rem #{$content-styles-factor * 2}rem;}
+.cnt > ul > li {margin-left: #{$content-styles-factor}rem;}
+.cnt > ol > li {margin-bottom: #{$content-styles-factor}rem;}
 
-.cnt > ol li ol,
-.cnt > ul li ul {margin-top: #{$content-styles-factor / 2}rem;}
+.cnt > ol li,
+.cnt > ul li {list-style-position: inside}
+
+//.cnt > ol li ol,
+//.cnt > ul li ul {margin-top: #{$content-styles-factor / 2}rem;}
 
 //
 // .. Headings

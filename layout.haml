@@ -1,14 +1,13 @@
 !!!
 %html.no-js{lang: "ru-RU"}
   %head
-    %title Chemistry Template
+    %title Ping
     = haml 'views/layouts/_head'.to_sym
   
   %body#page.page
     = haml 'views/layouts/alerts/_ie'.to_sym
     = haml 'views/layouts/alerts/_no-js'.to_sym
-    = haml 'views/layouts/_header'.to_sym
-    
+
     %main#main.main{role: "main"}
       = yield
 

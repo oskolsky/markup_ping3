@@ -1,22 +1,12 @@
 //****************************************************************************************************
 //
-// .. FONTS
-//
-//****************************************************************************************************
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic);
-
-
-
-//****************************************************************************************************
-//
 // .. LAYOUT
 //
 //****************************************************************************************************
 //
 // .. Layout type
 //
-$layout: responsive; // .. fixed / fluid / responsive
+$layout: fixed; // .. fixed / fluid / responsive
 $responsive: auto; // .. auto / manual (activated if $layout: responsive;)
 $responsive-column-qty: 12; // .. 8 / 12 (activated if $responsive: auto;)
 
@@ -60,20 +50,20 @@ $tablet-max-width: 940px;
 //
 // .. Body
 //
-$base-bg: #fff;
-$base-color: #333;
-$base-font-family: "PT Sans", Helvetica, Arial, sans-serif;
-$base-font-size: 1.5rem;
+$base-bg: #f9f9f9;
+$base-color: #292b2b;
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+$base-font-size: 1.3rem;
 $base-font-weight: 400;
-$base-line-height: 1.5;
+$base-line-height: 1.2;
 
 //
 // .. Headings
 //
-$h-font-family: "PT Serif", Times, "Times New Roman", serif;
+$h-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;;
 
-$h1-font-size:   4rem;
-$h1-font-weight: 700;
+$h1-font-size:   2rem;
+$h1-font-weight: 400;
 $h1-line-height: 1;
 
 $h2-font-size:   3rem;
@@ -99,9 +89,9 @@ $h6-line-height: $base-line-height;
 //
 // .. Links
 //
-$links-color: #2980b9;
-$links-color-hover: #ccc;
-$links-color-active: darken($links-color-hover, 10%);
+$links-color: $base-color;
+$links-color-hover: #5cc1ff;
+$links-color-active: #5cc1ff;
 $links-style: un;        // .. nn / uu / un / nu
 $links-style-pseudo: uu; // .. nn / uu / un
 

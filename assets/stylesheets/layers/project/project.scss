@@ -5,6 +5,32 @@
 //****************************************************************************************************
 .header {
   // .. &.__sticky / null / null
+  padding: 5rem 0;
+}
+//
+// .. Logo
+//
+.header_logo {
+  vertical-align: top;
+}
+//
+// .. Navigation
+//
+.header_nav {
+  text-align: center;
+}
+.header_nav_i {
+  display: inline-block;
+  margin: 0 2.5rem;
+}
+.header_nav_i_a {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  &.__current {
+    color: $links-color-hover;
+    text-decoration: none;
+  }
 }
 
 
@@ -15,5 +41,8 @@
 //
 //****************************************************************************************************
 .footer {
-
+  background-color: #aee123;
+  color: #fff;
+  font-weight: 300;
+  padding: 6.5rem 0 3rem;
 }
