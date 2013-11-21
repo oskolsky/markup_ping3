@@ -2,6 +2,35 @@
 $(function() {
   
   $.stickyFooter();
+  
+  
+  
+  //****************************************************************************************************
+  //
+  // .. SEND MAIL
+  //
+  //****************************************************************************************************
+  $('#feedback-form-submit').click(function() {
+    $.ajax({
+      type: 'POST',
+      url:  '/mail.php',
+      data: $('#feedback-form').serialize(),
+      success: function(response) {
+        $.arcticmodal({
+          type: 'ajax',
+          url: '/views/dialogs/_send_success.html'
+        });
+        $('#feedback-form')[0].reset();
+      },
+      error: function() {
+        $.arcticmodal({
+          type: 'ajax',
+          url: '/views/dialogs/_send_error.html'
+        });
+      }
+    });
+    return false;
+  });  
 
 
 

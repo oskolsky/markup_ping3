@@ -23,21 +23,22 @@
     %section.section.p-b_3{role: "region", "aria-label" => "Feedback"}
       .ctn
         .feedback-form
-          %form.form
+          %form.form{id: "feedback-form"}
             .form_row
-              %input{type: "text", class: "form_text form_el __block", placeholder: "Имя", autofocus: "autofocus"}
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Name", name: "data[name]", autofocus: "autofocus"}
             .form_row
-              %input{type: "text", class: "form_text form_el __block", placeholder: "Email"}
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Email", name: "data[email]"}
             .form_row
-              %input{type: "text", class: "form_text form_el __block", placeholder: "Причина обращения"}
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Please choose from the following topics", name: "data[inquiry]"}
             .form_row
-              %input{type: "text", class: "form_text form_el __block", placeholder: "Тема"}
+              %input{type: "text", class: "form_text form_el __block", placeholder: "Subject", name: "data[subject]"}
             .form_row
-              %textarea.form_textarea.form_el.__block{rows: 5, placeholder: "Сообщение"}
+              %textarea.form_textarea.form_el.__block{rows: 5, placeholder: "Requset message", name: "data[message]"}
             .form_row
               .tx.__center
-                %a{href: "#", class: "feedback-form_submit"} Отправить
+                %input{type: "hidden", name: "send"}
+                %a{href: "#", class: "feedback-form_submit", id: "feedback-form-submit"} Send
 
   %footer#footer.footer{role: "contentinfo"}
     .ctn
-      %p Все права защищены 2013-2014
+      %p All rights reserved 2013-2014
