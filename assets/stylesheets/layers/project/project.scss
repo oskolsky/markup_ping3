@@ -4,10 +4,33 @@
 //
 //****************************************************************************************************
 .page {
+  &.__home {
+    background-color: $base-bg;
+    .section {
+      background-color: $flagman-bg;
+      height: 495px;
+      padding-top: 9.5rem;
+      @include prefixes(box-sizing, border-box);
+      > .ctn {
+        position: relative;
+      }
+      .nav {
+        margin-bottom: 4.5rem;
+        text-align: left;
+        .nav_i {
+          margin: 0 5rem 0 0;
+        }
+      }
+    }
+    .footer {
+      background-color: $base-bg;
+      color: #b4b4b4;
+    }
+  }
   &.__terms {
     background-color: $base-bg;
     .header {
-      .header_nav_i_a {
+      .nav_i_a {
         &:hover,
         &.__current {
           color: $links-color-hover;
@@ -25,7 +48,7 @@
   &.__feedback {
     background-color: $flagman-bg;
     .header {
-      .header_nav_i_a {
+      .nav_i_a {
         &:hover,
         &.__current {
           color: #fff;
@@ -53,23 +76,33 @@
   // .. &.__sticky / null / null
   padding: 5rem 0;
 }
+
+
+
+//****************************************************************************************************
 //
-// .. Logo
+// .. LOGO
 //
-.header_logo {
+//****************************************************************************************************
+.logo {
   vertical-align: top;
 }
+
+
+
+//****************************************************************************************************
 //
-// .. Navigation
+// .. NAVIGATION
 //
-.header_nav {
+//****************************************************************************************************
+.nav {
   text-align: center;
 }
-.header_nav_i {
+.nav_i {
   display: inline-block;
   margin: 0 2.5rem;
 }
-.header_nav_i_a {
+.nav_i_a {
   font-size: 1.6rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -86,6 +119,94 @@
 .section {
 
 }
+
+
+
+//****************************************************************************************************
+//
+// .. NAME
+//
+//****************************************************************************************************
+.name {
+  margin: 6rem 0 4rem 0;
+  p {
+    font-size: 6rem;
+    line-height: .9;
+    &:first-child {
+      color: #292b2b;
+      font-weight: 100;
+    }
+    &:last-child {
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
+
+
+
+//****************************************************************************************************
+//
+// .. SOCIAL
+//
+//****************************************************************************************************
+.social {
+  margin-bottom: 10rem;
+}
+.social_i {
+  i {
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+  }
+  span {
+    display: inline-block;
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+}
+.social_separator {
+  background-color: #fff;
+  display: inline-block;
+  height: 4rem;
+  margin: 0 3rem;
+  width: .1rem;
+  vertical-align: middle;
+}
+
+
+
+//****************************************************************************************************
+//
+// .. LOPATA
+//
+//****************************************************************************************************
+.lopata {
+  position: absolute;
+  top: -1.5rem;
+  right: 0;
+  z-index: 9999;
+  img {
+    vertical-align: top;
+  }
+}
+
+
+
+//****************************************************************************************************
+//
+// .. DOWNLOAD
+//
+//****************************************************************************************************
+.download {
+
+}
+.download_i {
+  display: inline-block;
+  margin-right: 3.5rem;
+  vertical-align: top;
+}
+
 
 
 //****************************************************************************************************
@@ -120,4 +241,5 @@
 .footer {
   font-weight: 300;
   padding: 6.5rem 0 3rem;
+  @include prefixes(box-sizing, border-box);
 }

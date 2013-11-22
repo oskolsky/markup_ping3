@@ -1,1 +1,39 @@
-%section{role: "region", "aria-label" => ""}
+%body#page.page.__home
+  = haml 'views/layouts/alerts/_ie'.to_sym
+  = haml 'views/layouts/alerts/_no-js'.to_sym
+
+  %main#main.main{role: "main"}
+
+    %section.section{role: "region", "aria-label" => "Home"}
+      .ctn
+        %img{src: "/assets/images/logo_white.png", alt: "Ping", width: "196", height: "81", class: "logo"}
+        .name
+          %p Конфиденциальный
+          %p мессенджер
+        .lopata
+          %img{src: "/assets/images/lopata.png", width: "294", height: "614", alt: "Ping App"}
+        %nav.social
+          %a{href: "https://www.facebook.com/pages/Ping/569723926382150", class: "social_i"}
+            %i.ico.__30.__fb
+            %span Facebook
+          %span.social_separator
+          %a{href: "https://twitter.com/AppPing", class: "social_i"}
+            %i.ico.__30.__tw
+            %span Twitter
+        %nav{role: "navigation"}
+          %ul.nav
+            %li.nav_i
+              %a{href: "/terms", class: "nav_i_a"} Условия использования
+            %li.nav_i
+              %a{href: "/feedback", class: "nav_i_a"} Обратная связь
+            %li.nav_i
+              %a{href: "http://pingapp.tumblr.com/", class: "nav_i_a"} Блог
+        .download
+          %a{href: "https://itunes.apple.com/us/app/ping-app/id694666193?l=ru&ls=1&mt=8", class: "download_i"}
+            %img{src: "/assets/images/appstore.png", width: "173", height: "52", alt: "Download on App Store"}
+          %a{href: "#", class: "download_i"}
+            %img{src: "/assets/images/googleplay.png", width: "173", height: "72", alt: "coming soon on Google Play"}
+
+  %footer#footer.footer{role: "contentinfo"}
+    .ctn
+      %p All rights reserved 2013-2014
