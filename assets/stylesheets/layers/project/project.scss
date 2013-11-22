@@ -5,17 +5,17 @@
 //****************************************************************************************************
 .page {
   &.__home {
-    background-color: $base-bg;
-    height: 100%;
     min-height: 768px !important;
+    height: 100%;
+    background-color: $base-bg;
     @media all and (max-width: ($phone-max-width + 20)) {
       min-height: 1000px !important;
     }
     .section {
-      background-color: $flagman-bg;
-      height: 495px;
-      padding-top: 9.5rem;
       @include prefixes(box-sizing, border-box);
+      padding-top: 9.5rem;
+      height: 495px;
+      background-color: $flagman-bg;
       > .ctn {
         position: relative;
       }
@@ -108,9 +108,9 @@
   margin: 0 2.5rem;
 }
 .nav_i_a {
-  font-size: 1.6rem;
-  font-weight: 300;
   text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.6rem;
   &:hover, &.__current {text-decoration: none;}
 }
 
@@ -166,16 +166,16 @@
   }
   span {
     display: inline-block;
-    font-size: 1.5rem;
     vertical-align: middle;
+    font-size: 1.5rem;
   }
 }
 .social_separator {
-  background-color: #fff;
   display: inline-block;
-  height: 4rem;
   margin: 0 3rem;
   width: .1rem;
+  height: 4rem;
+  background-color: #fff;
   vertical-align: middle;
 }
 
@@ -224,13 +224,13 @@
   width: 52rem;
 }
 .feedback-form_submit {
-  color: #fff;
   display: inline-block;
-  font-size: 3rem;
-  font-weight: 600;
   padding: 1rem 0;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
   &:hover {
     color: #fff;
   }
@@ -244,7 +244,7 @@
 //
 //****************************************************************************************************
 .footer {
-  font-weight: 300;
-  padding: 6.5rem 0 3rem;
   @include prefixes(box-sizing, border-box);
+  padding: 6.5rem 0 3rem;
+  font-weight: 300;
 }

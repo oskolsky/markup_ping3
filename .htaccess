@@ -1,0 +1,7 @@
+Options +FollowSymLinks -MultiViews -Indexes
+DirectorySlash Off
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^(.*?)/?$
+RewriteCond %{DOCUMENT_ROOT}/%1.html -f
+RewriteRule ^(.*?)/?$ $1.html
