@@ -6,6 +6,11 @@
 .page {
   &.__home {
     background-color: $base-bg;
+    height: 100%;
+    min-height: 768px !important;
+    @media all and (max-width: ($phone-max-width + 20)) {
+      min-height: 1000px !important;
+    }
     .section {
       background-color: $flagman-bg;
       height: 495px;
