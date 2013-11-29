@@ -91,6 +91,8 @@ yepnope([
   '/assets/javascripts/jquery.extensions.js',
   '/assets/javascripts/forms.js',
   '/assets/javascripts/components.js',
+  '/assets/javascripts/lang.js',
+  '/assets/javascripts/app.js',
   '/assets/javascripts/project.js'
 
 ]);  
