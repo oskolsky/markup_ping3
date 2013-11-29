@@ -29,11 +29,19 @@
             .form_row
               %input{type: "text", class: "form_text form_el __block", placeholder: "Email", name: "data[email]"}
             .form_row
-              %input{type: "text", class: "form_text form_el __block", placeholder: "Please choose from the following topics", name: "data[inquiry]"}
+              .form_select.form_el.__fake.__block
+                %p &nbsp;
+                %select.form_select.form_el.__real{name: "data[inquiry]"}
+                  %option{value: "No subject", selected: "selected"} Please choose from the following topics
+                  %option{value: "Bug/technical issue report"} Bug/technical issue report 
+                  %option{value: "Confirmation code"} Confirmation code
+                  %option{value: "PR"} PR
+                  %option{value: "Partnership"} Partnership
+                  %option{value: "Other"} Other
             .form_row
               %input{type: "text", class: "form_text form_el __block", placeholder: "Subject", name: "data[subject]"}
             .form_row
-              %textarea.form_textarea.form_el.__block{rows: 5, placeholder: "Requset message", name: "data[message]"}
+              %textarea.form_textarea.form_el.__block{rows: 5, placeholder: "Your message", name: "data[message]"}
             .form_row
               .tx.__center
                 %input{type: "hidden", name: "send"}

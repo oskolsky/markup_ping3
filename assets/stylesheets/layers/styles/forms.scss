@@ -96,10 +96,7 @@ a.form_button {
 //
 .form_el {
   &.__real {cursor: pointer;}
-  &.__focus {
-    border-radius: .3rem;
-    box-shadow: 0 0 .3rem .1rem rgba(41, 128, 185, .66);
-  }
+  &.__focus {}
 }
 
 //
@@ -193,23 +190,19 @@ a.form_button {
   vertical-align: top;
   @include prefixes(box-sizing, border-box);
   &::after {
-    right: .4rem;
-    width: 2rem;
-    height: 2rem;
+    right: 2rem;
     line-height: 1.8;
     content: "\f078";
-    border: $form-el-border;
     border-radius: $form-el-border-radius;
     color: #aaa;
     font-family: FontAwesome;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
     text-indent: -.1rem;
     @include prefixes(box-sizing, border-box);
     @include prefixes(transform, translate(0, -50%));
   }
   &[disabled]::after {opacity: .5;}
-  &:not([disabled]):hover::after {border: .1em solid #aaa;}
   > p {margin-right: 2.4rem;}
 }
   
