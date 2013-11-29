@@ -4,19 +4,13 @@
 
   %header#header.header{role: "banner"}
     .ctn
+      = haml 'views/layouts/_lang'.to_sym
       .grid
         .grid-i.__grid-3.va-m
           %a{href: "/"}
             %img{src: "/assets/images/logo_white.png", alt: "Ping", width: "196", height: "81", class: "logo"}
         .grid-i.__grid-9.va-m
-          %nav{role: "navigation"}
-            %ul.nav
-              %li.nav_i
-                %a{href: "/terms", class: "nav_i_a"} Условия использования
-              %li.nav_i
-                %a{href: "/feedback", class: "nav_i_a __current"} Обратная связь
-              %li.nav_i
-                %a{href: "http://pingapp.tumblr.com/", class: "nav_i_a"} Блог
+          %nav#nav{role: "navigation"}
 
   %main#main.main{role: "main"}
 
@@ -39,6 +33,4 @@
                 %input{type: "hidden", name: "send"}
                 %a{href: "#", class: "feedback-form_submit", id: "feedback-form-submit"} Send
 
-  %footer#footer.footer{role: "contentinfo"}
-    .ctn
-      %p All rights reserved 2013-2014
+  = haml 'views/layouts/_footer'.to_sym
