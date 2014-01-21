@@ -19,5 +19,8 @@ sword.exe
 # Windows
 Thumbs.db
 
+# MacOS
+.DS_Store
+
 #SASS
 .sass-cache
