@@ -1,10 +1,9 @@
-Ping v.3
-========
+# Ping v3
 
-Верстка проекта "Ping"
+Version: 3.0
 
-| Страница                      | Ссылка                                         |
-|-------------------------------|------------------------------------------------|
-| Главная                       | http://ping3.oskolsky.com/index.html           |
-| Условия                       | http://ping3.oskolsky.com/terms.html           |
-| Контакты                      | http://ping3.oskolsky.com/feedback.html        |
+Updated: 1/02/2014
+
+## Credits
+
+* @oskolsky — Senior Frontend Developer
