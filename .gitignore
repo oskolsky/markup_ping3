@@ -1,3 +1,6 @@
+# Log file
+*.log
+
 # Eclipse
 .project
 
@@ -19,8 +22,8 @@ sword.exe
 # Windows
 Thumbs.db
 
-# MacOS
-.DS_Store
+#exe
+*.exe
 
-#SASS
+#Sass
 .sass-cache
