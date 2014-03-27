@@ -2,7 +2,7 @@
 
 Version: 3.0
 
-Updated: 20/03/2014
+Updated: 27/03/2014
 
 Works with Sword: https://github.com/somu/sword
 
